@@ -57,7 +57,7 @@ export default function Footer() {
               <a key={tel} href={`tel:${tel.replace(/\s/g, '')}`}>{tel}</a>
             ))}
             <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
-            <Link to="/contact">Nous ecrire</Link>
+            <Link to="/contact">Nous Contacter</Link>
           </div>
         </div>
       </div>

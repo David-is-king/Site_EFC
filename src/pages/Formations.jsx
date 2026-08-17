@@ -53,7 +53,7 @@ export default function Formations() {
         description="Formations qualifiantes, en tutorat, en apprentissage dual et formation continue au CFP-EFC a Bamako."
       />
 
-      <div className="pagehead">
+      <div className="pagehead pagehead-centre">
         <div className="wrap">
           <h1>Catalogue des formations</h1>
           <p>

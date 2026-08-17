@@ -25,8 +25,6 @@ export default function CarteFormation({ formation }) {
         <h3>{formation.titre}</h3>
         <p>{formation.accroche}</p>
         <div className="meta">
-          <span><b>{formation.duree}</b> · {formation.volume}</span>
-          <span>{formation.rythme}</span>
         </div>
         <span className="go">Voir le programme &rarr;</span>
       </div>

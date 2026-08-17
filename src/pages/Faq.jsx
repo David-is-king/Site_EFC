@@ -12,7 +12,7 @@ export default function Faq() {
         description="Inscription, documents à fournir, attestations, formations en entreprise : les réponses aux questions les plus posées au CFP-EFC."
       />
 
-      <div className="pagehead">
+      <div className="pagehead pagehead-centre">
         <div className="wrap">
           <h1>Questions fréquentes</h1>
           <p>

@@ -1,6 +1,6 @@
 
 :root {
-  --navy: #17255a;
+  --navy: #262980;
   --navy-ink: #0e1738;
   --orange: #e8761b;
   --orange-fonce: #d16912;
@@ -10,7 +10,7 @@
   --ink: #2e3444;
   --muted: #69708a;
   --line: #dde2ec;
-  --maxw: 1440px;
+  --maxw: 1990px;
   --r: 3px;
 }
 
@@ -136,7 +136,6 @@ p { margin: 0 0 1em; }
   font-weight: 700; color: var(--orange); margin-bottom: 16px;
   display: flex; align-items: center; gap: 12px;
 }
-.eyebrow::after { content: ''; height: 1px; flex: 1; max-width: 110px; background: rgba(232, 118, 27, 0.5); }
 
 /* Fleches et puces de navigation du carrousel */
 .hero-fleche {
@@ -185,7 +184,8 @@ section { padding: 64px 0; }
 .dark .sec-title h2 { color: #fff; }
 .dark .sec-title p { color: #b9c2e4; }
 .dark .sec-title .eyebrow { color: var(--orange); }
-
+.sec-title.center { text-align: center; margin-left: auto; margin-right: auto; }
+.sec-title.center .eyebrow { justify-content: center; }
 /* --------------------------------------------------------------------------
    CHIFFRES CLES (compteurs animes)
    -------------------------------------------------------------------------- */
@@ -234,6 +234,7 @@ section { padding: 64px 0; }
 .why > div { border-top: 2px solid var(--orange); padding-top: 16px; }
 .why h4 { font-size: 16.5px; color: var(--navy); margin-bottom: 7px; }
 .why p { font-size: 14.3px; color: var(--muted); margin: 0; }
+.why-icone { width: 34px; height: 34px; color: var(--orange); margin-bottom: 12px; display: block; }
 
 /* --------------------------------------------------------------------------
    TEMOIGNAGES
@@ -286,6 +287,10 @@ section { padding: 64px 0; }
   width: auto; height: auto;
   object-fit: contain;
 }
+
+.marquee-carte { width: 300px; flex-shrink: 0; }
+.marquee-carte .card { height: 100%; }
+
 /* --------------------------------------------------------------------------
    APPEL A L'ACTION
    -------------------------------------------------------------------------- */
@@ -327,6 +332,17 @@ footer a:hover { color: var(--orange); }
 .pagehead { background: var(--navy); color: #fff; padding: 52px 0; }
 .pagehead h1 { font-size: clamp(27px, 3.6vw, 40px); margin-bottom: 12px; }
 .pagehead p { color: #bfc8e8; max-width: 62ch; font-family: 'Newsreader', Georgia, serif; font-size: 18px; margin: 0; }
+
+.pagehead-centre { position: relative; overflow: hidden; text-align: center; }
+.pagehead-centre::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/img/batimentUIE.jpg') center/cover no-repeat;
+  opacity: 0.12;
+}
+.pagehead-centre .wrap { position: relative; z-index: 1; }
+.pagehead-centre p { margin-left: auto; margin-right: auto; }
 
 /* --------------------------------------------------------------------------
    FILTRES DU CATALOGUE
@@ -438,6 +454,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--orange); ou
 .mem img { aspect-ratio: 1; border-radius: 50%; object-fit: cover; margin-bottom: 14px; }
 .mem b { display: block; color: var(--navy); font-size: 16px; }
 .mem span { font-size: 13px; color: var(--muted); }
+.team.center { grid-template-columns: repeat(auto-fit, minmax(160px, 200px)); justify-content: center; }
 
 /* --------------------------------------------------------------------------
    BOUTON WHATSAPP FLOTTANT

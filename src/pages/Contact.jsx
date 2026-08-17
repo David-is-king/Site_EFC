@@ -129,7 +129,7 @@ export default function Contact() {
         description="Contactez le CFP-EFC à Badalabougou, Bamako : formulaire, téléphone, e-mail et localisation."
       />
 
-      <div className="pagehead">
+      <div className="pagehead pagehead-centre">
         <div className="wrap">
           <h1>Nous contacter</h1>
           <p>

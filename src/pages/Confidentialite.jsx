@@ -14,7 +14,7 @@ export default function Confidentialite() {
         description="Mentions légales, éditeur, hébergeur et politique de traitement des données personnelles du site du CFP-EFC."
       />
 
-      <div className="pagehead">
+      <div className="pagehead pagehead-centre">
         <div className="wrap">
           <h1>Mentions légales et confidentialité</h1>
         </div>

@@ -15,7 +15,7 @@ export default function APropos() {
         description="Le CFP-EFC, centre de formation de l'Universite Internationale d'Excellence : vision, mission, equipe et partenaires."
       />
 
-      <div className="pagehead">
+      <div className="pagehead pagehead-centre">
         <div className="wrap">
           <h1>Le centre</h1>
           <p>
@@ -85,13 +85,14 @@ export default function APropos() {
       
       <section className="alt">
         <div className="wrap">
-          <div className="sec-title">
+          <div className="sec-title center">
             <div className="eyebrow">Nos atouts</div>
             <h2>Pourquoi choisir le CFP-EFC</h2>
           </div>
           <div className="why">
             {ATOUTS.map((a) => (
               <div key={a.titre}>
+                <img className="why-icone" src={a.icone} alt="" loading="lazy" />
                 <h4>{a.titre}</h4>
                 <p>{a.texte}</p>
               </div>
@@ -102,11 +103,11 @@ export default function APropos() {
 
       <section>
         <div className="wrap">
-          <div className="sec-title">
+          <div className="sec-title center">
             <div className="eyebrow">L&apos;equipe</div>
             <h2>Une équipe d’experts passionnés...</h2>
           </div>
-          <div className="team">
+          <div className="team center">
             {EQUIPE.map((m, i) => (
               <div className="mem" key={i}>
                 <img src={m.photo} alt={m.nom} loading="lazy" />
@@ -120,7 +121,7 @@ export default function APropos() {
 
       <section className="alt" style={{ paddingBottom: 40 }}>
         <div className="wrap">
-          <div className="sec-title" style={{ marginBottom: 24 }}>
+          <div className="sec-title center" style={{ marginBottom: 24 }}>
             <div className="eyebrow">Partenaires</div>
             <h2 style={{ fontSize: 26 }}>Entreprises et institutions partenaires</h2>
           </div>

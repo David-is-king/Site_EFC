@@ -6,7 +6,7 @@ import Partenaires from '../components/Partenaires';
 import CarteFormation from '../components/CarteFormation';
 import { CHIFFRES, ATOUTS, TEMOIGNAGES } from '../data/contenus';
 import { FORMATIONS, MODALITES } from '../data/formations';
-
+import FormationsDefilantes from '../components/FormationsDefilantes';
 /**
  * PAGE D'ACCUEIL
  * Enchaine : banniere animee, bandeau des quatre modalites, chiffres cles
@@ -62,33 +62,33 @@ export default function Accueil() {
       </section>
 
       <section className="alt">
-        <div className="wrap">
-          <div className="sec-title">
-            <div className="eyebrow">Catalogue</div>
-            <h2>Nos formations les plus demandées</h2>
-            <p>
-              Selection des programmes qui ouvrent le plus rapidement sur un emploi
-              ou une évolution de poste.
-            </p>
-          </div>
-          <div className="cards">
-            {phares.map((f) => <CarteFormation key={f.slug} formation={f} />)}
-          </div>
-          <p style={{ marginTop: 28 }}>
-            <Link className="btn ghost" to="/formations">Parcourir tout le catalogue</Link>
-          </p>
-        </div>
-      </section>
+  <div className="wrap">
+    <div className="sec-title center">
+      <h2>Nos formations les plus demandées</h2>
+      <p>
+        Selection des programmes qui ouvrent le plus rapidement sur un emploi
+        ou une évolution de poste.
+      </p>
+    </div>
+  </div>
+  <FormationsDefilantes />
+  <div className="wrap">
+    <p style={{ marginTop: 28 }}>
+      <Link className="btn ghost" to="/formations">Parcourir tout le catalogue</Link>
+    </p>
+  </div>
+</section>
 
       <section>
         <div className="wrap">
-          <div className="sec-title">
+          <div className="sec-title center">
             <div className="eyebrow">Pourquoi le CFP-EFC</div>
             <h2>Un centre adossé à l&apos;université, tourne vers l&apos;emploi</h2>
           </div>
           <div className="why">
             {ATOUTS.map((a) => (
               <div key={a.titre}>
+                <img className='why-icone' src={a.icone} alt="" loading='lazy'/>
                 <h4>{a.titre}</h4>
                 <p>{a.texte}</p>
               </div>
@@ -99,7 +99,7 @@ export default function Accueil() {
 
       <section className="alt">
         <div className="wrap">
-          <div className="sec-title">
+          <div className="sec-title center">
             <div className="eyebrow">Temoignages</div>
             <h2>Ce qu&apos;en disent nos anciens</h2>
           </div>
@@ -123,8 +123,7 @@ export default function Accueil() {
       {/* Bandeau des partenaires : defilement continu vers la gauche */}
       <section className="alt" style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <div className="sec-title" style={{ marginBottom: 24 }}>
-            <div className="eyebrow">Ils nous font confiance</div>
+          <div className="sec-title center" style={{ marginBottom: 24 }}>
             <h2 style={{ fontSize: 26 }}>Nos partenaires</h2>
             <p>
               Grâce à la collaboration avec nos partenaires, nous offrons à nos apprenants des opportunités de stage et d’insertion professionnelle.
@@ -141,7 +140,7 @@ export default function Accueil() {
             <p>Ecrivez-nous : nous répondrons sous 48 heures.</p>
           </div>
           <div className="acts">
-            <Link className="btn light" to="/contact">Nous écrire</Link>
+            <Link className="btn light" to="/contact">Nous contacter</Link>
           </div>
         </div>
       </div>

@@ -52,12 +52,11 @@ export const FORMATIONS = [
     slug: 'comptabilite-gestion-financiere',
     titre: 'Gestion financière, comptabilité et ressources humaines',
     modalite: 'qualifiante',
+    duree: '20 h à 40 h',
     publics: ['etudiants', 'professionnels'],
     image: '/img/comptabilite.jpg',
     accroche:
       "Formation dédiée à la gestion financière, à la comptabilité et à l’administration du personnel en entreprise.",
-    duree: '20 h à 40 h',
-    rythme: 'Centre + entreprise',
     lieu: 'Badalabougou, Bamako',
     validation: 'Attestation CFP-EFC',
     pourQui: [
@@ -95,12 +94,11 @@ export const FORMATIONS = [
     slug: 'apprentissage metier',
     titre: 'APPRENTISSAGE DES MÉTIERS',
     modalite: 'dual',
+    duree: '20 h à 40 h',
     publics: ['etudiants', 'professionnels', 'entreprises'],
     image: '/img/metier.png',
     accroche:
       "Des formations pratiques permettant d’apprendre directement un métier et de développer des compétences professionnelles.",
-    volume: '20 h à 40 h',
-    rythme: 'Centre + entreprise',
     lieu: 'Badalabougou, Bamako',
     validation: 'Attestation CFP-EFC',
     pourQui: [
@@ -142,12 +140,11 @@ export const FORMATIONS = [
     slug: 'informatique',
     titre: 'Informatique et nouvelles technologies',
     modalite: 'continue',
+    duree: '20 h à 40 h',
     publics: ['professionnels', 'entreprises'],
     image: '/img/Technologies.jpg',
     accroche:
       "Formation axée sur l’informatique, le numérique, le développement logiciel, les réseaux et les nouvelles technologies.",
-    duree: '20 h à 40 h',
-    rythme: 'Centre + entreprise',
     lieu: 'Badalabougou, Bamako',
     validation: 'Attestation CFP-EFC',
     pourQui: [
@@ -184,11 +181,11 @@ export const FORMATIONS = [
     slug: 'management-marketing-com',
     titre: "MANAGEMENT, MARKETING ET COMMUNICATION",
     modalite: 'tutorat',
+    duree: '20 h à 40 h',
     publics: ['entrepreneurs', 'etudiants'],
     image: '/img/Marketing-communication.jpg',
     accroche:
       "Formation consacrée au management des équipes, au marketing, à la communication et au développement commercial.",
-    duree: '20 h à 40 h',
     lieu: 'Badalabougou, Bamako',
     validation: 'Attestation CFP-EFC',
     pourQui: [
@@ -221,12 +218,11 @@ export const FORMATIONS = [
     slug: 'securite-mine',
     titre: "SÉCURITÉ, ENVIRONNEMENT ET INDUSTRIE MINIÈRE",
     modalite: 'continue',
+    duree: '20 h à 40 h',
     publics: ['professionnels', 'entreprises'],
     image: '/img/mine.jfif',
     accroche:
       "Formation consacrée à la sécurité au travail, à la protection de l’environnement et aux activités liées au secteur minier.",
-    duree: '20 h à 40 h',
-    rythme: 'Centre + entreprise',
     lieu: 'Badalabougou, Bamako',
     validation: 'Attestation CFP-EFC',
     pourQui: [
@@ -266,12 +262,11 @@ export const FORMATIONS = [
     slug: 'banque-assurance',
     titre: 'BANQUE ET ASSURANCE',
     modalite: 'dual',
+    duree: '20 h à 40 h',
     publics: ['etudiants', 'professionnels'],
     image: '/img/mba.jpg',
     accroche:
       "Formation spécialisée dans les activités bancaires, financières, commerciales et assurantielles.",
-    duree: '20 h à 40 h',
-    rythme: 'Centre + entreprise',
     lieu: 'Badalabougou, Bamako',
     validation: 'Attestation CFP-EFC',
     pourQui: [

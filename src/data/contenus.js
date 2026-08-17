@@ -56,31 +56,37 @@ export const CHIFFRES = [
 export const ATOUTS = [
   {
     titre: "L'appui de l'UIE",
+    icone: '/img/appui-uie.svg',
     texte:
       "Le centre s’appuie sur les ressources académiques et le corps enseignant de l’Université Internationale d’Excellence.",
   },
   {
     titre: 'Des formateurs de terrain',
+    icone: '/img/formateurs-terrain.svg',
     texte:
       "Chaque programme est animé par des professionnels qui exercent le métier qu'ils enseignent.",
   },
   {
     titre: 'Une pédagogie pratique',
+    icone: '/img/pedagogie-pratique.svg',
     texte:
       "Ateliers, cas réels et mises en situation : ici, on apprend en faisant, pas seulement en écoutant.",
   },
   {
     titre: 'Des programmes alignés sur le marché',
+     icone: '/img/programmes-marche.svg',
     texte:
       "Le catalogue évolue selon les besoins exprimés par les entreprises de la place.",
   },
   {
     titre: 'Un cadre propice',
+     icone: '/img/cadre-propice.svg',
     texte:
       "Sur la Colline du Savoir à Badalabougou, dans un environnement academique moderne.",
   },
   {
     titre: 'Du sur-mesure pour les entreprises',
+     icone: '/img/sur-mesure-entreprises.svg',
     texte:
       "Des programmes intra-entreprise conçus à partir de votre diagnostic des compétences.",
   },
@@ -91,21 +97,21 @@ export const TEMOIGNAGES = [
   {
     initiales: 'AT',
     nom: 'Aminata T.',
-    formation: 'Gestion & comptabilité d\u2019entreprise — promotion 2026',
+    formation: 'Gestion & comptabilité d\u2019entreprise',
     texte:
       "J’ai été recrutée deux mois après la fin de ma formation. Les exercices ressemblaient exactement à ce que je fais aujourd’hui au bureau.",
   },
   {
     initiales: 'MK',
     nom: 'Moussa K.',
-    formation: 'Maintenance électricité — promotion 2025',
+    formation: 'Maintenance électricité',
     texte:
       "Une formation très pratique qui m’a permis de mieux comprendre les installations électriques et d’être plus autonome sur le terrain. Je recommande vivement ce centre.",
   },
   {
     initiales: 'FD',
     nom: 'Fatoumata D.',
-    formation: "Marketing Digital — promotion 2025",
+    formation: "Marketing Digital",
     texte:
       "J’ai appris bien plus que la théorie : j’ai appris à créer, communiquer et développer une présence efficace sur le digital. Je recommande vivement cette formation.",
   },

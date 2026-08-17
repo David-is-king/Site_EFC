@@ -30,7 +30,7 @@ export default function DetailFormation() {
     <>
       <Seo titre={formation.titre} description={formation.accroche} />
 
-      <div className="pagehead">
+      <div className="pagehead pagehead-centre">
         <div className="wrap">
           <span className="tag" style={{ '--couleur': modalite.couleur }}>
             {modalite.nom}
@@ -81,7 +81,6 @@ export default function DetailFormation() {
               <div className="rows">
                 <div className="row"><span>Modalité</span><b>{modalite.nom}</b></div>
                 <div className="row"><span>Durée</span><b>{formation.duree} {formation.volume}</b></div>
-                <div className="row"><span>Rythme</span><b>{formation.rythme}</b></div>
                 <div className="row"><span>Lieu</span><b>{formation.lieu}</b></div>
                 <div className="row"><span>Validation</span><b>{formation.validation}</b></div>
               </div>
@@ -96,7 +95,7 @@ export default function DetailFormation() {
                 </Link>
                 <small>
                   Le programme détaillé et les conditions d&apos;inscription vous sont
-                  envoyés par e-mail sous 48 h.
+                  envoyés par e-mail.
                 </small>
               </div>
             </aside>

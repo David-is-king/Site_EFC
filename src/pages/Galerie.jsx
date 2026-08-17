@@ -33,7 +33,7 @@ export default function Galerie() {
         description="Photos des sessions de formation, des travaux pratiques et des remises d'attestations au CFP-EFC."
       />
 
-      <div className="pagehead">
+      <div className="pagehead pagehead-centre">
         <div className="wrap">
           <h1>Galerie</h1>
           <p>Ateliers, travaux pratiques, immersions en entreprise et remise d’attestations.</p>
