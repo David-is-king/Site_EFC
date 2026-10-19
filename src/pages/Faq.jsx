@@ -3,7 +3,7 @@ import Seo from '../components/Seo';
 import Accordeon from '../components/Accordeon';
 import { FAQ } from '../data/contenus';
 
-/** PAGE FAQ — les questions viennent de src/data/contenus.js */
+// PAGE FAQ — les questions viennent de src/data/contenus.js 
 export default function Faq() {
   return (
     <>

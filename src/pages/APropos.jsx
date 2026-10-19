@@ -4,8 +4,7 @@ import { ATOUTS, EQUIPE, MOT_DIRECTEUR} from '../data/contenus';
 
 /**
  * PAGE A PROPOS
- * Vision, mission, atouts, equipe et partenaires. Les textes de vision et de
- * mission sont repris mot pour mot de la plaquette institutionnelle du centre.
+ * Vision, mission, atouts, equipe et partenaires
  */
 export default function APropos() {
   return (

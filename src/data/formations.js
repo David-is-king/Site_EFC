@@ -1,16 +1,4 @@
-/**
- * CATALOGUE DES FORMATIONS
- * ------------------------
- * C'est ici, et nulle part ailleurs, que l'on ajoute ou modifie une formation.
- * Le catalogue, les filtres, la page de detail et les "formations proches" se
- * mettent a jour automatiquement a partir de ce fichier.
- *
- * IMPORTANT : conformement au cahier des charges, aucun champ "prix" ne doit
- * etre ajoute ici. Le site ne doit afficher aucun tarif.
- *
- * Le champ "slug" sert d'adresse dans l'URL : /formations/mon-slug
- * Il doit etre unique, en minuscules, sans accent ni espace.
- */
+// CATALOGUE DES FORMATIONS
 
 export const MODALITES = [
   {
@@ -39,7 +27,7 @@ export const MODALITES = [
   },
 ];
 
-/** Publics cibles, repris du point 3 du cahier des charges. */
+// Publics cibles
 export const PUBLICS = [
   { id: 'etudiants', nom: 'Etudiants et jeunes diplomes' },
   { id: 'professionnels', nom: 'Professionnels en activite' },

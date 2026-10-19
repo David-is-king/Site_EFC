@@ -1,9 +1,7 @@
 /**
  * CONTENUS EDITORIAUX DU SITE
- * ---------------------------
  * Chiffres cles, temoignages, partenaires, FAQ, coordonnees et images de la
- * banniere et de la galerie. Tout se modifie ici, sans toucher au code des
- * composants.
+ * banniere et de la galerie
  */
 
 /** Coordonnees du centre, reprises dans l'entete, le pied de page et la page Contact. */
@@ -11,13 +9,10 @@ export const CONTACT = {
   adresse: "Badalabougou, sur la Colline du Savoir, a l'UIE",
   ville: 'Bamako, Mali',
   telephones: ['+223 79 34 66 58', '+223 76 71 98 98'],
-  // Numero au format international sans espace ni signe, pour le lien WhatsApp
   whatsapp: '22379346658',
   email: 'davidtelly404@gmail.com',
   horaires: ['Lundi au vendredi : 8h - 17h'],
   facebook: 'https://web.facebook.com/efcmali?locale=fr_FR',
-  // Lien d'integration Google Maps. Pour le remplacer : Google Maps > Partager >
-  // Integrer une carte > copier la valeur de l'attribut src de l'iframe.
   carteEmbed:
     'https://www.google.com/maps?q=Badalabougou,Bamako,Mali&output=embed',
 };
@@ -118,8 +113,7 @@ export const TEMOIGNAGES = [
 ];
 
 /**
- * Partenaires affiches dans le bandeau defilant.
- * Le defilement est infini : le composant duplique automatiquement la liste.
+ * Partenaires affiches dans le bandeau defilant
  */
 export const PARTENAIRES = [
   { nom: 'Partenaire 1', logo: '/img/anpe.png' },

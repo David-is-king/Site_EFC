@@ -4,9 +4,8 @@ import { MODALITES } from '../data/formations';
 
 /**
  * PIED DE PAGE
- * Quatre colonnes : identite du centre, liens utiles, modalites de formation,
- * coordonnees et reseaux sociaux. Puis une barre basse avec les mentions
- * legales et le copyright (annee calculee automatiquement).
+ * identite du centre, liens utiles, modalites de formation, coordonnees et reseaux sociaux. 
+ * Puis les mentions legales et le copyright (annee calculee automatiquement).
  */
 export default function Footer() {
   const annee = new Date().getFullYear();

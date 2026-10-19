@@ -546,8 +546,6 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--orange); ou
   .hero-fleche { display: none; }
 }
 
-/* Respect des preferences systeme : on coupe les animations si l'utilisateur
-   a demande une reduction des mouvements. */
 @media (prefers-reduced-motion: reduce) {
   .hero-diapo.active img { animation: none; }
   .marquee-piste { animation: none; }

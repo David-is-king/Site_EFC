@@ -1,11 +1,8 @@
 import Seo from '../components/Seo';
 import { CONTACT } from '../data/contenus';
 
-/**
- * MENTIONS LEGALES ET POLITIQUE DE CONFIDENTIALITE
- * Les zones entre crochets sont a completer par le centre avant la mise en
- * ligne (identite de l'editeur, hebergeur retenu, numero d'immatriculation).
- */
+// MENTIONS LEGALES ET POLITIQUE DE CONFIDENTIALITE
+
 export default function Confidentialite() {
   return (
     <>

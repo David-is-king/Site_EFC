@@ -3,15 +3,8 @@ import Seo from '../components/Seo';
 import CarteFormation from '../components/CarteFormation';
 import { getFormation, getModalite, FORMATIONS } from '../data/formations';
 
-/**
- * FICHE DETAILLEE D'UNE FORMATION
- * Le slug est lu dans l'adresse (/formations/:slug) puis recherche dans le
- * catalogue. Si aucune formation ne correspond, on redirige vers la page 404.
- *
- * RAPPEL DU CAHIER DES CHARGES : la colonne de droite affiche les modalites
- * pratiques mais AUCUN tarif. La conversion se fait par les deux boutons de
- * demande d'informations.
- */
+//FICHE DETAILLEE D'UNE FORMATION
+ 
 export default function DetailFormation() {
   const { slug } = useParams();
   const formation = getFormation(slug);
@@ -20,7 +13,6 @@ export default function DetailFormation() {
 
   const modalite = getModalite(formation.modalite);
 
-  // Suggestions : trois autres formations, en privilegiant la meme modalite.
   const proches = FORMATIONS
     .filter((f) => f.slug !== formation.slug)
     .sort((a, b) => (b.modalite === formation.modalite) - (a.modalite === formation.modalite))

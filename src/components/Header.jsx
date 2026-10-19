@@ -4,11 +4,7 @@ import { CONTACT } from '../data/contenus';
 
 /**
  * ENTETE DU SITE
- * Contient le bandeau de coordonnees, le logo, le menu principal fixe
- * (sticky) et le menu burger sur mobile.
- *
- * NavLink de react-router-dom ajoute automatiquement une classe quand le lien
- * correspond a la page courante : on s'en sert pour souligner l'onglet actif.
+ * Contient le bandeau de coordonnees, le logo, le menu principal fixe et le menu burger sur mobile
  */
 const LIENS = [
   { to: '/', label: 'Accueil' },
@@ -24,12 +20,10 @@ export default function Header() {
 
   return (
     <>
-      {/* Bandeau superieur : coordonnees cliquables */}
       <div className="topinfo">
         <div className="wrap">
           <span>{CONTACT.adresse}</span>
           <span className="right">
-            {/* Le protocole tel: declenche l'appel direct depuis un mobile */}
             <a href={`tel:${CONTACT.telephones[0].replace(/\s/g, '')}`}>
               {CONTACT.telephones[0]}
             </a>
@@ -62,8 +56,6 @@ export default function Header() {
               <NavLink
                 key={lien.to}
                 to={lien.to}
-                // `end` limite la correspondance exacte pour l'accueil,
-                // sinon "/" serait actif sur toutes les pages.
                 end={lien.to === '/'}
                 className={({ isActive }) => (isActive ? 'actif' : '')}
                 onClick={() => setOuvert(false)}

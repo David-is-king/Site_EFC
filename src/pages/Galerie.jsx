@@ -2,14 +2,10 @@ import { useState, useEffect } from 'react';
 import Seo from '../components/Seo';
 import { GALERIE } from '../data/contenus';
 
-/**
- * GALERIE PHOTOS
- * Grille de vignettes ; un clic ouvre la photo en plein ecran (lightbox).
- * La touche Echap referme la vue, et le defilement de la page est bloque
- * pendant l'affichage pour eviter que l'arriere-plan bouge.
- */
+// GALERIE PHOTOS
+
 export default function Galerie() {
-  const [ouverte, setOuverte] = useState(null); // index de la photo affichee
+  const [ouverte, setOuverte] = useState(null); 
 
   useEffect(() => {
     function surTouche(e) {

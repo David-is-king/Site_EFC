@@ -7,15 +7,9 @@ import CarteFormation from '../components/CarteFormation';
 import { CHIFFRES, ATOUTS, TEMOIGNAGES } from '../data/contenus';
 import { FORMATIONS, MODALITES } from '../data/formations';
 import FormationsDefilantes from '../components/FormationsDefilantes';
-/**
- * PAGE D'ACCUEIL
- * Enchaine : banniere animee, bandeau des quatre modalites, chiffres cles
- * animes, formations phares, atouts, temoignages, partenaires defilants et
- * appel a l'action.
- */
+// PAGE D'ACCUEIL
 export default function Accueil() {
-  // On met en avant les trois premieres formations du catalogue.
-  // Pour changer la selection, il suffit de reordonner formations.js.
+  // On met en avant les trois premieres formations du catalogue
   const phares = FORMATIONS.slice(0, 3);
 
   return (
@@ -27,7 +21,7 @@ export default function Accueil() {
 
       <HeroCarousel />
 
-      {/* Bandeau des quatre modalites : il chevauche le bas de la banniere */}
+      {/* Bandeau des quatre modalites */}
       <div className="modalites">
         <div className="wrap">
           <div className="modgrid">

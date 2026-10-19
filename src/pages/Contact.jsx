@@ -7,11 +7,7 @@ import { FORMATIONS, getFormation } from '../data/formations';
 const CLE_WEB3FORMS = '30ce3571-45d9-4614-b0f5-3555650e5a42';
 /**
  * PAGE CONTACT
- * Formulaire a gauche, coordonnees et carte a droite.
- 
- * ------------------------------------------------------------------------
- * ENVOI DES MESSAGES 
- * ------------------------------------------------------------------------
+ * Formulaire a gauche, coordonnees et carte a droite
  * Les demandes sont transmises par Web3Forms a la boite du centre
  */
 export default function Contact() {
@@ -36,8 +32,7 @@ export default function Contact() {
   const [envoiEnCours, setEnvoiEnCours] = useState(false);
 
 
-  // Un seul gestionnaire pour tous les champs : on se sert de l'attribut
-  // name de l'input comme cle dans l'objet d'etat.
+  // Un seul gestionnaire pour tous les champs
   function changer(e) {
     const { name, value } = e.target;
     setDonnees((d) => ({ ...d, [name]: value }));
@@ -82,8 +77,7 @@ export default function Contact() {
             // Permet de repondre directement au visiteur depuis la messagerie
             replyto: donnees.email || undefined,
   
-            // Contenu de la demande. On transmet le TITRE de la formation et non
-            // son slug, pour que l'e-mail recu reste lisible par le centre.
+            // Contenu de la demande. On transmet le TITRE de la formation
             nom: donnees.nom,
             telephone: donnees.telephone,
             email: donnees.email,
@@ -249,8 +243,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Carte Google Maps. loading="lazy" evite de charger la carte
-                  tant que l'utilisateur n'a pas fait defiler jusqu'ici. */}
+              {/* Carte Google Maps */}
               <div className="carte">
                 <iframe
                   src={CONTACT.carteEmbed}

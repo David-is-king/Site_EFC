@@ -4,22 +4,15 @@ import Seo from '../components/Seo';
 import CarteFormation from '../components/CarteFormation';
 import { FORMATIONS, MODALITES, PUBLICS } from '../data/formations';
 
-/**
- * CATALOGUE DES FORMATIONS
- * Filtrage par modalite, par public et par recherche texte.
- *
- * La modalite est lue dans l'URL (?modalite=dual) : cela permet aux liens du
- * pied de page et du bandeau d'accueil d'arriver directement sur un catalogue
- * pre-filtre, et rend le filtre partageable par copier-coller du lien.
- */
+//CATALOGUE DES FORMATIONS
+
 export default function Formations() {
   const [params, setParams] = useSearchParams();
   const [modalite, setModalite] = useState(params.get('modalite') || 'toutes');
   const [publicCible, setPublicCible] = useState('tous');
   const [recherche, setRecherche] = useState('');
 
-  // Si l'utilisateur arrive avec une adresse contenant deja un filtre,
-  // on synchronise l'etat local.
+ 
   useEffect(() => {
     setModalite(params.get('modalite') || 'toutes');
   }, [params]);
@@ -31,11 +24,7 @@ export default function Formations() {
     else setParams({ modalite: id });
   }
 
-  /**
-   * useMemo evite de refiltrer la liste a chaque rendu : le calcul n'est
-   * refait que si un des filtres change. Sur six formations c'est marginal,
-   * mais l'habitude est bonne des que le catalogue grandit.
-   */
+
   const resultats = useMemo(() => {
     return FORMATIONS.filter((f) => {
       const okModalite = modalite === 'toutes' || f.modalite === modalite;

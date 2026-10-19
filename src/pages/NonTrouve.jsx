@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 
-/** PAGE 404 — affichee pour toute adresse inconnue. */
+// PAGE 404 affichee pour toute adresse inconnue
 export default function NonTrouve() {
   return (
     <>

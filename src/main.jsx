@@ -4,10 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './styles.css';
 
-/**
- * POINT D'ENTREE DE L'APPLICATION
- * BrowserRouter active la navigation par adresse (URL propres, sans #).
- */
+// POINT D'ENTREE DE L'APPLICATION
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>

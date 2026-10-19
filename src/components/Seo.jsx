@@ -2,12 +2,6 @@ import { useEffect } from 'react';
 
 /**
  * GESTION DES BALISES SEO
- * ----------------------
- * Un site React n'a qu'un seul index.html : il faut donc mettre a jour le
- * titre et la meta description a la main a chaque changement de page.
- *
- * Ce petit composant ne rend rien a l'ecran, il agit uniquement sur le
- * document. On l'appelle en haut de chaque page.
  */
 export default function Seo({ titre, description }) {
   useEffect(() => {

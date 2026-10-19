@@ -1,10 +1,7 @@
 import { CONTACT } from '../data/contenus';
 
 /**
- * BOUTON WHATSAPP FLOTTANT
- * Present sur toutes les pages. C'est le canal de contact le plus utilise par
- * le public vise, d'ou sa presence permanente demandee au cahier des charges.
- * Le parametre `text` pre-remplit le message dans l'application.
+ * BOUTON WHATSAPP FLOTTANT Present sur toutes les pages
  */
 export default function BoutonWhatsApp() {
   const message = encodeURIComponent(
